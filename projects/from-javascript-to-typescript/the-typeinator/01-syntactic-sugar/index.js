@@ -10,7 +10,7 @@ function announceMachines(announce, ...machines) {
 			label = machine.label;
 			labelsCount += 1;
 		} else {
-			label = `"Make: ${machine.make}; Model: ${machine.model}.`;
+			label = `Make: ${machine.make}; Model: ${machine.model}`;
 		}
 		announce(label);
 	}
