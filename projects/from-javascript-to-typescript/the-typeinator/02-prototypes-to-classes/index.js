@@ -40,20 +40,10 @@ class Humanoid extends Robot {
 	}
 
 	announce() {
-		console.log(`> ${this.catchphrase} <`);
+		super.announce();
+		console.log(` > ${this.catchphrase} <`);
 	}
 }
-
-for (var i in Robot.prototype) {
-	if ({}.hasOwnProperty.call(Robot.prototype, i)) {
-		Humanoid.prototype[i] = Robot.prototype[i];
-	}
-}
-
-Humanoid.prototype.announce = function announce() {
-	Robot.prototype.announce.apply(this);
-	console.log(" > " + this.catchphrase + " <");
-};
 
 module.exports.Humanoid = Humanoid;
 module.exports.Robot = Robot;
