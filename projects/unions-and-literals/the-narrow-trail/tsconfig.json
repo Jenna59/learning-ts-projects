@@ -1,4 +1,10 @@
 {
-	"extends": "../../../tsconfig.json",
-	"include": ["src"]
+	"compilerOptions": {
+		"module": "Node16",
+		"target": "es2022",
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "Node16",
+		"noImplicitUseStrict": false,
+		"alwaysStrict": true
+	}
 }

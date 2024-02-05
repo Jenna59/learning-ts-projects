@@ -1,8 +1,15 @@
 {
 	"name": "the-narrow-trail",
+	"type": "module",
 	"scripts": {
 		"test": "jest",
 		"test:solutions": "cross-env TEST_SOLUTIONS=1 jest",
 		"tsc": "tsc"
+	},
+	"dependencies": {
+		"@jest/globals": "^29.7.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.11.16"
 	}
 }
